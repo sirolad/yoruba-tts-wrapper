@@ -1,0 +1,30 @@
+{
+  "name": "yoruba-tts",
+  "version": "1.0.0",
+  "description": "A wrapper for a Yoruba TTS Model",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "AI",
+    "Models",
+    "Yoruba",
+    "TTS"
+  ],
+  "author": "Surajudeen Akande",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.8"
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "semi": false,
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "prettier": "3.2.5"
+  }
+}
