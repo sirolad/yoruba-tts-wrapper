@@ -13,6 +13,11 @@ npm install yoruba-tts
 Remember to get your API token from [HuggingFace](https://huggingface.co/settings/tokens)
 and put in the .env file in the root of your project.
 
+```.dotenv
+TTS_MODEL_URL=https://api-inference.huggingface.co/models/facebook/mms-tts-yor
+HUGGINGFACE_API_KEY=
+```
+
 ```javascript
 import { generateSpeech } from 'yoruba-tts'
 

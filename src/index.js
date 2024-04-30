@@ -32,4 +32,4 @@ async function generateSpeech(text, outputPath) {
     }
 }
 
-module.exports = generateSpeech
+module.exports = { generateSpeech }
