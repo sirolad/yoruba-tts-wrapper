@@ -6,7 +6,7 @@ It is also possible to make use of another model which might be more advance tha
 ## Installation
 
 ```bash
-npm install yoruba-tts-wrapper
+npm install yoruba-tts
 ````
 
 ## Usage

@@ -1,6 +1,6 @@
 {
   "name": "yoruba-tts",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A wrapper for a Yoruba TTS Model",
   "main": "src/index.js",
   "type": "module",
