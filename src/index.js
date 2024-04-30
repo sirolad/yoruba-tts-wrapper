@@ -1,8 +1,8 @@
 import axios from 'axios'
-import fs from 'fs'
 import path from 'path'
+import { writeFile } from 'fs/promises'
 
-async function generateSpeech(text, outputPath) {
+export async function generateSpeech(text, outputPath) {
     const url =
         process.env.TTL_MODEL_URL ??
         'https://api-inference.huggingface.co/models/facebook/mms-tts-yor'
@@ -22,7 +22,7 @@ async function generateSpeech(text, outputPath) {
             headers,
             responseType: 'arraybuffer',
         })
-        await fs.promises.writeFile(filePath, response.data)
+        await writeFile(filePath, response.data)
         console.log('Audio file saved:', filePath)
     } catch (error) {
         console.error(
@@ -31,5 +31,3 @@ async function generateSpeech(text, outputPath) {
         )
     }
 }
-
-module.exports = { generateSpeech }
