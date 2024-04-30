@@ -1,10 +1,11 @@
+import 'dotenv/config'
 import axios from 'axios'
 import path from 'path'
 import { writeFile } from 'fs/promises'
 
 export async function generateSpeech(text, outputPath) {
     const url =
-        process.env.TTL_MODEL_URL ??
+        process.env.TTS_MODEL_URL ??
         'https://api-inference.huggingface.co/models/facebook/mms-tts-yor'
     const headers = {
         Authorization: `Bearer ${process.env.HUGGINGFACE_API_KEY}`,
